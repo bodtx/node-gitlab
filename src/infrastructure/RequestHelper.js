@@ -3,6 +3,7 @@ import LinkParser from 'parse-link-header';
 import QS from 'qs';
 import URLJoin from 'url-join';
 import StreamableRequest from 'request';
+import { RateLimiter } = from 'limiter';
 
 function defaultRequest(
   { url, useXMLHttpRequest },
